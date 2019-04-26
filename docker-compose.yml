@@ -1,0 +1,12 @@
+version: '3'
+services:
+  httpd:
+    build: ./httpd
+    ports:
+    - "80:80"
+    links:
+    - wildfly
+  wildfly:
+    build: ./wildfly
+    ports:
+    - "8080:8080"

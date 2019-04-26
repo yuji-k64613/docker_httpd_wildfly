@@ -1,0 +1,3 @@
+<Location /docker-example/>
+    ProxyPass ajp://wildfly:8009/docker-example/
+</Location>
